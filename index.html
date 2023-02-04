@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Currency Futures</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>Pricing Currency Future Contract</header>
+    <div id="showcase">
+      <form class="input-container">
+        <div class="first-section">
+          <label>Domestic Currency</label>
+          <select id="domestic-currency">
+            <option>TR</option>
+            <option>USD</option>
+            <option>EUR</option>
+            <option>JPY</option>
+            <option>GBP</option>
+            <option>CHF</option>
+            <option>CAD</option>
+            <option>AUD</option>
+          </select>
+          <label>Foreign Currency</label>
+          <select id="foreign-currency">
+            <option>TR</option>
+            <option selected>USD</option>
+            <option>EUR</option>
+            <option>JPY</option>
+            <option>GBP</option>
+            <option>CHF</option>
+            <option>CAD</option>
+            <option>AUD</option>
+          </select>
+        </div>
+        <div class="second-section">
+          <label>Spot Price</label>
+          <input id="spot-price" />
+          <label>Risk Free Rate in Domestic Currency</label>
+          <input id="r-domestic" />
+          <label>Risk Free Rate in Foreign Currency</label>
+          <input id="r-foreign" />
+          <label>Valuation Date</label>
+          <input id="t" />
+        </div>
+        <button id="calculate">Calculate</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
